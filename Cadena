@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class StringBuilder03 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Introduce una cadena: ");
+        String cadena = scanner.nextLine();
+
+        System.out.print("Introduce la posición inicial del rango a eliminar: ");
+        int inicio = scanner.nextInt();
+
+        System.out.print("Introduce la posición final del rango a eliminar: ");
+        int fin = scanner.nextInt();
+
+        StringBuilder sb = new StringBuilder(cadena);
+        sb.delete(inicio, fin);
+
+        System.out.println("Cadena resultante: " + sb.toString());
+    }
+}
